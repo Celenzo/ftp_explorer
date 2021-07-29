@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FtpHandlerService } from 'src/app/services/ftp-handler.service';
 
 @Component({
   selector: 'app-main-view',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainViewComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ftpHandlerService: FtpHandlerService) { }
 
   ngOnInit(): void {
+
   }
 
 }
